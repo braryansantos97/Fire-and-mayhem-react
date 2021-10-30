@@ -20,24 +20,28 @@ const ROUTES = [
     component: RenderRoutes,
     routes: [
     	{
-    		Component: Home,
+        path: '/app',
     		key: 'HOME',
-    		path: '/home'
+        exact: true,
+        Component: Home,
     	},
     	{
-    		Component: Selection,
-    		key: 'SELECTION',
-    		path: '/selection'
+        path: '/app/selection',
+        key: 'SELECTION',
+        exact: true,
+        Component: Selection,
     	},
       {
-        Component: Arena,
+        path: '/app/arena',
         key: 'ARENA',
-        path: '/arena'
+        exact: true,
+        Component: Arena,
       },
     	{
-    		Component: About,
+        path: '/app/about',
     		key: 'ABOUT',
-    		path: '/about'
+        exact: true,
+        Component: About,
     	},
     ],
   },
