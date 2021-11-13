@@ -25,7 +25,7 @@ if (process.env.NODE_ENV !== 'development'){
   app.use(express.static('public'))
 };
 
-app.use('/game', characterController);
+app.use('/api/game', characterController);
 
 app.listen(PORT, () => {
     console.log(`API Listening on port ${PORT}`);
